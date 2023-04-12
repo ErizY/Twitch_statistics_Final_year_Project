@@ -20,9 +20,9 @@ head = st.container()
 dataset = st.container()
 
 with dataset:#calling my data
-    games = pd.read_csv('\\data\\popular_games.csv')
-    streamers = pd.read_csv('\\data\\popular_streamers.csv')
-    day_cycle = pd.read_csv('\\data\\Most popular games 7 day cycle - Sheet1.csv')
+    games = pd.read_csv('data/popular_games.csv')
+    streamers = pd.read_csv('data/popular_streamers.csv')
+    day_cycle = pd.read_csv('data/Most popular games 7 day cycle - Sheet1.csv')
 
 with sidebar:
     st.sidebar.title("options")
