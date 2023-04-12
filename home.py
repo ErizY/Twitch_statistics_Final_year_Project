@@ -91,7 +91,7 @@ if option =="Home":
 <p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- This website is for educational purposes only</p>
 
 <h1 style="font-family: Times, serif; color: #941cc7;">Contact information</h1>
-<a href="https:/https://www.twitch.tv/sireriz" style="color: #941cc7;">Twitch</a>
+<a href="https://www.twitch.tv/sireriz" style="color: #941cc7;">Twitch</a>
 <p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">Email feel free to ask me any questions or contact me at eriz.yusuf@outlook.com</p>
 
 ''', unsafe_allow_html=True)
