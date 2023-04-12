@@ -34,10 +34,15 @@ if option =="Most popular games":
 )
    fig3 = fig = px.pie(games, values='Peak viewers', names='Game', color='Game', title='Most popular games of all time')
    st.plotly_chart(fig3)
+   st.markdown('''
+   <p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">The bar chart above shows the most popular games by total viewers</p>
+   ''', unsafe_allow_html=True)
 
    fig4 = px.line(day_cycle, x='date', y='views', color='Games', title='Most popular games over the last 7 days')
    st.plotly_chart(fig4)
-
+   st.markdown('''
+      <p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">The line graph above shows the most popular games in the past 7 days from the 4th of april to the 11th of april 2023 </p>
+      ''', unsafe_allow_html=True)
 
 
 
