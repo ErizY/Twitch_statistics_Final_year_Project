@@ -30,36 +30,36 @@ with sidebar:
 
 
 if option =="Most popular games":
-   components.html("""<h1 style="text-align: center; color:#941cc7; font-size:50px; font:"Times New Roman"; ">Most popular games on Twitch</h1>"""
+   components.html("""<h1 style="text-align: center; color:#941cc7; font-size:50px; font:" Arial New Roman"; ">Most popular games on Twitch</h1>"""
 )
    fig3 = fig = px.pie(games, values='Peak viewers', names='Game', color='Game', title='Most popular games of all time')
    st.plotly_chart(fig3)
    st.markdown('''
-   <p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">The bar chart above shows the most popular games by total viewers</p>
+   <p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">The bar chart above shows the most popular games by total viewers</p>
    ''', unsafe_allow_html=True)
 
    fig4 = px.line(day_cycle, x='date', y='views', color='Games', title='Most popular games over the last 7 days')
    st.plotly_chart(fig4)
    st.markdown('''
-      <p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">The line graph above shows the most popular games in the past 7 days from the 4th of april to the 11th of april 2023 </p>
+      <p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">The line graph above shows the most popular games in the past 7 days from the 4th of april to the 11th of april 2023 </p>
       ''', unsafe_allow_html=True)
 
 
 
 if option =="Most popular streamers":
     components.html(
-        """<h1 style="text-align: center; color:#941cc7; font-size:50px; font:"Times New Roman"; ">Most popular streamers on Twitch</h1>"""
+        """<h1 style="text-align: center; color:#941cc7; font-size:50px; font:" Arial New Roman"; ">Most popular streamers on Twitch</h1>"""
         )
 
     fig = px.bar(streamers.head(10), x='Channel', y='Peak viewers')
     st.plotly_chart(fig)
     st.markdown('''
-<p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">The bar chart above shows the most popular streamers by peak viewers</p>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">The bar chart above shows the most popular streamers by peak viewers</p>
 ''', unsafe_allow_html=True)
     fig1 = px.bar(streamers.head(10), x='Channel', y='Followers')
     st.plotly_chart(fig1)
     st.markdown('''
-        <p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">The bar chart above shows the most popular streamers by total followers</p>
+        <p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">The bar chart above shows the most popular streamers by total followers</p>
         ''', unsafe_allow_html=True)
 
 
@@ -68,31 +68,31 @@ if option =="Most popular streamers":
 
 if option =="Home":
 
-    components.html("""<h2 style="text-align: center; color:#941cc7; font-size:50px; font:"Times New Roman"; ">Twitch data visualisation project by Eriz Yusuf</h2> """)
-    components.html("""<p style="color:#941cc7; font-size:14px; font:"Times New Roman"; > This is my data visualisation project for the most popular games and streamers. This sites aim is to help users understand what the most popular games on twitch and find the most popular streamers. Some people use twitch as a guide to find games they want to take an interest in</p>""")
+    components.html("""<h2 style="text-align: center; color:#941cc7; font-size:50px; font:" Arial New Roman"; ">Twitch data visualisation project by Eriz Yusuf</h2> """)
+    components.html("""<p style="color:#941cc7; font-size:14px; font:" Arial New Roman"; > This is my data visualisation project for the most popular games and streamers. This sites aim is to help users understand what the most popular games on twitch and find the most popular streamers. Some people use twitch as a guide to find games they want to take an interest in</p>""")
 
     st.markdown('''
-<h1 style="font-family: Times, serif; color: #941cc7;">Disclaimer</h1>
-<p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- I DO NOT OWN THE DATA BEING USED</p>
-<p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- The information was gathered from the Twitch API and Sully Gnome</p>
-<p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- I do not affiliate with Twitch</p>
-<p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- I do not promote any of the games or streamers mentioned; it's just to show the popular games and streams</p>
-<p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- This website is for educational purposes only</p>
+<h1 style="font-family:  Arial, serif; color: #941cc7;">Disclaimer</h1>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- I DO NOT OWN THE DATA BEING USED</p>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- The information was gathered from the Twitch API and Sully Gnome</p>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- I do not affiliate with Twitch</p>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- I do not promote any of the games or streamers mentioned; it's just to show the popular games and streams</p>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- This website is for educational purposes only</p>
 ''', unsafe_allow_html=True)
 
 
 
     st.markdown('''
-<h1 style="font-family: Times, serif; color: #941cc7;">FAQ</h1>
-<p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">What Channels have you collected data for?/p>
-<p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- The top 100 streamers, and the top 100 games but it has been filtered down to easily undersand.</p>
-<p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- Is this data accurate?</p>
-<p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- This data was collected recently however data on a popular platform changes very quickly as new trends rise </p>
-<p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- This website is for educational purposes only</p>
+<h1 style="font-family:  Arial, serif; color: #941cc7;">FAQ</h1>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">What Channels have you collected data for?/p>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- The top 100 streamers, and the top 100 games but it has been filtered down to easily undersand.</p>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- Is this data accurate?</p>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- This data was collected recently however data on a popular platform changes very quickly as new trends rise </p>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- This website is for educational purposes only</p>
 
-<h1 style="font-family: Times, serif; color: #941cc7;">Contact information</h1>
+<h1 style="font-family:  Arial, serif; color: #941cc7;">Contact information</h1>
 <a href="https://www.twitch.tv/sireriz" style="color: #941cc7;">Twitch</a>
-<p style="font-family: Times, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">Email feel free to ask me any questions or contact me at eriz.yusuf@outlook.com</p>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">Email feel free to ask me any questions or contact me at eriz.yusuf@outlook.com</p>
 
 ''', unsafe_allow_html=True)
 
