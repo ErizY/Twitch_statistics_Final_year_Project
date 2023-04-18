@@ -84,7 +84,7 @@ if option =="Home":
 
     st.markdown('''
 <h1 style="font-family:  Arial, serif; color: #941cc7;">FAQ</h1>
-<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">What Channels have you collected data for?/p>
+<p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">What Channels have you collected data for?
 <p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- The top 100 streamers, and the top 100 games but it has been filtered down to easily undersand.</p>
 <p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- Is this data accurate?</p>
 <p style="font-family:  Arial, serif; font-size: 14px; font-style: normal; font-weight: normal; color: #941cc7;">- This data was collected recently however data on a popular platform changes very quickly as new trends rise </p>
